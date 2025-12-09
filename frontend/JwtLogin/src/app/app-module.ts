@@ -6,13 +6,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
-
+import {MatListModule} from '@angular/material/list';
 import { App } from './app'; // Assuming 'App' is another component
 import { AppRoutingModule } from './app-routing-module';
 import { Login } from './auth/login/login';
 import { Dashboard } from './auth/dashboard/dashboard';
-
-
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations: [
     App,
@@ -30,6 +32,12 @@ import { Dashboard } from './auth/dashboard/dashboard';
     MatFormFieldModule,
     MatIconModule,
      MatCardModule,
+     MatListModule,
+     MatGridListModule,
+     MatSidenavModule,
+     MatToolbarModule,
+     MatMenuModule
+
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
